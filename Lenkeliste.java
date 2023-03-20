@@ -35,6 +35,9 @@ abstract public class Lenkeliste <E> implements Liste<E> {
         public int stoerrelse() {
             int count = 0;
             Node peker = first;
+            if (peker == null){
+                return count;
+            }
             while (peker != null){
                 count++;
                 peker = peker.next;
